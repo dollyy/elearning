@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/person.css">
+</head>
+<body>
+    <div class="notebg"></div>
+    <!--导航栏-->
+    <nav>
+        <img src="images/logo.png">
+        <span id="usermsg">
+            <a href="person.html"><img id="usericon"></a>
+        </span>
+    </nav>
+    <!--用户信息-->
+    <div class="user">
+        <img class="usericon" src="">
+        <div class="username"></div>
+    </div>
+    <!--中间内容-->
+    <div class="message">
+        <!--左侧导航-->
+        <ol class="catalog">
+            <li class="color">
+                <span class="iconfont icon-ziyuan"></span>
+                <span class="cata1">资源</span>
+                <span class="iconfont icon-youjiantou"></span>
+            </li>
+            <li>
+                <span class="iconfont icon-tiwen"></span>
+                <span class="cata2">提问</span>
+                <span class="iconfont icon-youjiantou"></span>
+            </li>
+            <li>
+                <span class="iconfont icon-biji"></span>
+                <span class="cata3">笔记</span>
+                <span class="iconfont icon-youjiantou"></span>
+            </li>
+        </ol>
+        <!--右侧内容-->
+        <ul class="content">
+            <!--资源-->
+            <li class="course">
+                <div class="stu_following">
+                    <ul>
+                        <li class="course_cata1 addclass">最近学习</li>
+                        <li class="course_cata2">我的收藏</li>
+                    </ul>
+                </div>
+                <ul>
+                   <!--最近学习-->
+                    <li class="cata1_"></li>
+                    <!--我的收藏-->
+                    <li class="cata2_"></li>
+                </ul>
+            </li>
+            <!--提问-->
+            <li class="question">
+                <div class="q_cata">
+                    <div class="q_q addclass">我的提问</div>
+                    <div class="q_f">我的回答</div>
+                </div>
+                <ul>
+                    <!--我的提问-->
+                    <li class="q_con con1"></li>
+                    <!--我的回答-->
+                    <li class="q_con con2"></li>
+                </ul>
+            </li>
+            <!--笔记-->
+            <li class="note">
+                <div class="note_my">
+                    <span>我的笔记</span>
+                    <span class="add">添加笔记</span>
+                </div>
+                <div class="notes"></div>
+                <!--添加笔记的div-->
+                <div class="addNote">
+                    <div>添加笔记</div>
+                    <input class="addtit" placeholder="笔记的题目">
+                    <span class="titwarn"></span>
+                    <textarea class="addcon"></textarea>
+                    <span class="conwarn"></span>
+                    <span class="addsub">提交</span>
+                    <span class="addclose">关闭</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--版权信息-->
+    <footer>Copyright &copy; 2017 njxz.elearning.com All Rights Reserved</footer>
+    <!--返回顶部-->
+    <div class="backToTop iconfont icon-huojian"></div>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/person.js"></script>
+</body>
+</html>

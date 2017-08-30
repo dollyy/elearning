@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /*min-height: 100vh;*/
+    height: 100%;
+}
+
+/*导航栏*/
+nav{
+    width: 100%;
+    height: 60px;
+    background: #000;
+    line-height: 60px;
+}
+/*logo*/
+nav>img{
+    width: 150px;
+    height: 60px;
+    margin-left: 40px;
+}
+#usermsg{
+    float: right;
+}
+/*用户头像*/
+#usericon{
+    vertical-align: middle;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    cursor: pointer;
+}
+
+/*用户信息*/
+.user{
+    width: 100%;
+    height: auto;
+    background: url("../images/bg.jpg");
+    padding: 50px 70px;
+    box-sizing: border-box;
+}
+.usericon{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #fff;
+    float: left;
+    border: 3px solid #666;
+}
+.username{
+    width: auto;
+    height: auto;
+    font-size: 40px;
+    float: left;
+    margin: 70px;
+}
+
+/*中间内容*/
+.message{
+    width: 1250px;
+    flex: 1;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+/*左侧导航*/
+.catalog{
+    width: 200px;
+    height: auto;
+    float: left;
+}
+ol li{
+    height: 40px;
+    margin: 30px 15px;
+    border-bottom: 1px solid grey;
+}
+.color{
+    color: #eb4f38;
+}
+.color2{
+    color: #666;
+}
+.color3{
+    color: #000;
+}
+.cata1,.cata2,.cata3{
+    display: block;
+    float: left;
+    width: 118px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.icon-ziyuan,.icon-tiwen,.icon-biji,.icon-youjiantou{
+    font-size: 25px;
+    line-height: 40px;
+    float: left;
+}
+ol,ul{
+    list-style: none;
+}
+
+/*页面内容*/
+.content{
+    min-height: 700px;
+    float: right;
+}
+
+/*资源的内容*/
+.course{
+    /*display: none;*/
+}
+/*资源导航*/
+.stu_following{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid grey;
+}
+.course_cata1,.course_cata2{
+    width: 65px;
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.addclass{
+    border-bottom: 2px solid red;
+    color: red;
+}
+
+/*最近学习+我的收藏*/
+.cata1_,.cata2_{
+    width: 1000px;
+}
+.cata2_{
+    display: none;
+}
+.courses{
+    width: 100%;
+    height: auto;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.course_pic{
+    width: 200px;
+    height: 130px;
+    background: #ccc;
+    margin-right: 70px;
+}
+.courses_{
+    width: 350px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.course_tit{
+    font-size: 22px;
+}
+.course_mess>span,.course_note>span{
+    margin-right: 50px;
+}
+.course_note>span>span{
+    margin-left: 10px;
+}
+.course a{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #eb4f38;
+    text-decoration: none;
+    color: #eb4f38;
+    display: block;
+}
+.course a:hover{
+    background: #eb4f38;
+    color: #fff;
+}
+
+/*提问*/
+.question{
+    display: none;
+}
+/*提问的目录*/
+.q_cata{
+    width: 1000px;
+    height: 50px;
+    border-bottom: 2px solid grey;
+}
+.q_q,.q_f{
+    width: 65px;
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+/*提问内容*/
+/*.con1{
+    display: none;
+}*/
+.q1{
+    width: 1000px;
+    height: auto;
+    border-bottom: 1px solid grey;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.q1_res{
+    width: auto;
+    height: 30px;
+    font-size: 14px;
+    color: #666;
+}
+.q1_tit{
+    width: 100%;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+.q1_tit>span:nth-child(1){
+    width: 90%;
+    font-size: 19px;
+}
+.icon-xiajiantou{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.icon-xiajiantou:hover{
+    color: #000;
+}
+.ope{
+    width: 70px;
+    height: 30px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    right: 15px;
+    box-shadow: 0 0 5px #666;
+    display: none;
+}
+.ope>span:hover{
+    cursor: pointer;
+    color: #000;
+}
+.q1_a1{
+    width: auto;
+    margin-top: 30px;
+    display: flex;
+    font-size: 15px;
+    color: #666;
+}
+.q1_a1>span:first-child{
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 50px;
+}
+.q1_a1>span>span{
+    margin-left: 20px;
+}
+/*我的回答*/
+.con2{
+    display: none;
+    width: 1000px;
+    position: relative;
+}
+.con2_a1{
+    width: 100%;
+    height: auto;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid grey;
+}
+
+/*笔记*/
+.note{
+    display: none;
+}
+.note_my{
+    width: 1000px;
+    height: 50px;
+    line-height: 40px;
+    border-bottom: 2px solid grey;
+}
+.note_my>span:last-child{
+    display: block;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #eb4f38;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+}
+/*笔记内容*/
+.note1{
+    width: 1000px;
+    height: auto;
+    border-bottom: 1px solid grey;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.note_tit{
+    width: auto;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.note_con{
+    width: auto;
+    height: 105px;
+    border: 1px solid grey;
+    color: #666;
+    overflow: hidden;
+}
+.notebg{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    background: rgba(0,0,0,0.3);
+    display: none;
+}
+.addNote{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -250px;
+    z-index: 2;
+    background: #fff;
+    text-align: center;
+    display: none;
+}
+.addNote>div:first-child{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.addtit{
+    width: 90%;
+    padding: 5px;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.addcon{
+    height: 300px;
+    width: 90%;
+    padding: 5px;
+    overflow-y: scroll;
+    resize: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    outline: none;
+}
+.addclose,.addsub{
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    background: #eb4f38;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    float: right;
+    margin: 15px 35px 0 0;
+}
+.addsub{
+    background: #2E8B57;
+}
+.titwarn,.conwarn{
+    width: 110px;
+    height: 30px;
+    color: red;
+    font-size: 13px;
+    float: left;
+    margin-left: 40px;
+    line-height: 30px;
+}
+
+/*版权信息*/
+footer{
+    width: 100%;
+    height: 80px;
+    background: black;
+    margin-top: 70px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*返回顶部*/
+.backToTop{
+    width: 50px;
+    height: 50px;
+    font-size: 45px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background: #999;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+/*导航栏*/
+nav{
+    width: 100%;
+    height: 60px;
+    background: #000;
+    line-height: 60px;
+}
+/*logo*/
+nav>img{
+    width: 150px;
+    height: 60px;
+    margin-left: 40px;
+}
+#usermsg{
+    float: right;
+}
+/*用户头像*/
+#usericon{
+    vertical-align: middle;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    cursor: pointer;
+}
+
+/*资源目录*/
+.content{
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+/**/
+.contit{
+    width: 100%;
+    height: 200px;
+    background: #999;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.tit{
+    width: 85%;
+    font-size: 30px;
+    color: #fff;
+    margin: 0 auto;
+}
+.conmsg{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    color: #f2f2f2;
+    margin-top: 20px;
+}
+.msgLevel,.msgTime,.msgScore{
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    border-right: 1px solid #f2f2f2;
+    line-height: 25px;
+    margin-right: 50px;
+}
+.msgScore{
+    border: none;
+}
+.msgLevel span,.msgTime span,.msgScore span{
+    display: block;
+}
+/**/
+.con{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.conCata{
+    width: 80%;
+    height: auto;
+    /*border: 1px solid red;*/
+    float: left;
+    padding-right: 100px;
+    box-sizing: border-box;
+    color: #444;
+}
+.condes{
+    width: 100%;
+    height: auto;
+    padding-left: 3%;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+.conNav{
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ccc;
+    padding-left: 3%;
+    box-sizing: border-box;
+}
+.conNav span{
+    display: inline-block;
+    height: 80px;
+    line-height: 100px;
+    font-weight: 600;
+    margin-right: 70px;
+    cursor: pointer;
+}
+.color{
+    color: #eb4f38;
+}
+
+/*章节*/
+.chapters{
+    /*display: none;*/
+}
+.chapter{
+    width: 97%;
+    height: auto;
+    color: #000;
+    padding: 25px 3%;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;        /*!!!*/
+}
+.chapicon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #999;
+    border-radius: 50%;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+.chapConts{
+    width: 96%;
+    height: auto;
+    float: right;
+}
+.chaptit{
+    margin-bottom: 20px;
+}
+.chaptit span{
+    font-weight: 600;
+    margin-right: 20px;
+}
+.icon-shangjiantou1{
+    float: right;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.2s ease-in;
+}
+.cont{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #f2f2f6;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+    cursor: pointer;
+}
+.cont>span{
+    margin-right: 10px;
+}
+.cont:hover{
+    background: #2b333b;
+    color: #fff;
+}
+.cont:hover a{
+    color: #fff;
+}
+
+/*问答*/
+.QaA{
+    width: 100%;
+    height: auto;
+    display: none;
+    min-height: 600px;
+}
+.ques{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px 3%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+.ques img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.ques>div{
+    display: inline-block;
+    width: 90%;
+}
+.quser,.quser a{
+    color: #666;
+    font-size: 14px;
+}
+.quser a:hover{
+    color: #333;
+}
+.quser span:last-child{
+    float: right;
+}
+.qtit{
+    height: auto;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.qans{
+    height: 60px;
+    font-size: 15px;
+    overflow: hidden;
+    line-height: 30px;
+    margin-top: 15px;
+    /*实现超过两行多余部分显示……，但是用到了webkit的私有属性，
+      不然就要用jquery的插件jQuery ellipsis plugin来实现*/
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;              /*隐藏超出的内容*/
+    text-overflow: ellipsis;
+    display: -webkit-box;          /*是-webkit-私有属性*/
+    -webkit-line-clamp: 2;         /*显示的行数*/
+    -webkit-box-orient: vertical;  /*设置或检索伸缩盒对象的子元素的排列方式*/
+}
+.qans span:first-child{
+    font-weight: 600;
+}
+.qcount{
+    color: #666;
+    font-size: 14px;
+    float: right;
+    margin-top: 15px;
+}
+
+/*笔记*/
+.notes{
+    width: 100%;
+    height: auto;
+    display: none;
+    min-height: 600px;
+}
+.note{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px 3%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+.note img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.note>div{
+    display: inline-block;
+    width: 90%;
+}
+.noter,.noter>a{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #666;
+}
+.noter>a{
+    font-weight: 600;
+}
+.noter>a:hover{
+    color: #333;
+}
+.noter>span:nth-child(2){
+    float: right;
+}
+.notecont{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+.notecont>span:first-child{
+    display: block;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+#noteTog{
+    cursor: pointer;
+}
+#noteTog:hover{
+    color: #000;
+}
+#notefor{
+    float: right;
+    color: #666;
+}
+.icon-dianzan{
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 5px;
+    color: #666;
+    transition: all 0.3s ease-in;
+}
+
+/*右侧信息*/
+.conLet{
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.conLet>div:first-child{
+    font-weight: bold;
+}
+.recommend{
+    margin: 25px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.recommend img{
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.recommend>span{
+    display: inline-block;
+    height: auto;
+    width: 70%;
+    font-size: 14px;
+    color: #666;
+}
+.rec_tit{
+    display: block;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 5px;
+}
+.rec_desc{
+    height: 40px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/*版权信息*/
+footer{
+    width: 100%;
+    height: 80px;
+    background: black;
+    margin-top: 70px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+    font-size: 14px;
+}

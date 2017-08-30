@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft Yahei;
+}
+input{
+    outline: none;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*背景*/
+.bg{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    display: none;
+}
+
+/*导航栏*/
+nav{
+    width: 100%;
+    height: 60px;
+    background: #000;
+    line-height: 60px;
+}
+/*logo*/
+nav>img{
+    width: 150px;
+    height: 60px;
+    margin-left: 40px;
+}
+#usermsg{
+    float: right;
+}
+/*登录，注册*/
+.clicks{
+    width: auto;
+    color: #fff;
+}
+/*用户头像*/
+#usericon{
+    vertical-align: middle;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    display: none;
+    cursor: pointer;
+}
+#login,#register{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/*登录注册框*/
+.login,.register{
+    width: 300px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -150px;
+    background: #fff;
+    z-index: 20;
+    font-size: 14px;
+    padding: 10px 0 15px 0;
+    color: #333;
+    border-radius: 5px;
+    display: none;
+}
+/*去登录，去注册*/
+.goreg,.golog{
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.goreg:hover,.golog:hover{
+    color: red;
+}
+/*关闭*/
+.icon-cha{
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    right: 5px;
+}
+/*用户名，密码*/
+.username,.password,.r_pwdt,.hobby,.code{
+    width: 240px;
+    height: auto;
+    line-height: 25px;
+    border: 1px solid grey;
+    margin: 5px auto 3px auto;
+    padding: 3px 5px;
+    overflow: hidden;
+}
+.username{
+    margin-top: 20px;
+}
+.icon-yonghuming,.icon-mima,.icon-querenmima,.icon-moban14xingquaihao{
+    float: left;
+    font-size: 25px;
+}
+#l_name,#l_pwd,#r_name,#r_pwd,#r_pwdt{
+    float: right;
+    width: 202px;
+    padding: 4px;
+}
+/*用户名，密码错误*/
+.namewarn,.pwdwarn,.codewarn,.hobbywarn{
+    width: auto;
+    height: auto;
+    color: red;
+    font-size: 13px;
+    margin-left: 65px;
+    /*visibility: hidden;*/
+}
+/*自动登录，忘记密码*/
+.message{
+    width: 240px;
+    height: auto;
+    margin: 2px auto 15px auto;
+    overflow: hidden;
+}
+.remember{
+    width: auto;
+    float: left;
+}
+.remember input{
+    vertical-align: middle;
+}
+.forget{
+    width: auto;
+    float: right;
+}
+a{
+    color: #000;
+}
+a:hover{
+    color: red;
+}
+/*按钮*/
+.l_button,.r_button{
+    width: 240px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #00728a;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.l_button>input,.r_button>input{
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+}
+.hobby{
+    display: flex;
+}
+.hobby>div{
+    margin-left: 10px;
+}
+.hobby>div>input:first-child{
+    margin: 0;
+}
+.hobby>div>input{
+    margin-left: 8px;
+    vertical-align: middle;
+}
+#r_code{
+    height: 30px;
+    width: 80px; 
+    float: left;
+    padding: 0 3px;
+}
+#codeMsg{
+    width: 70px;
+    height: 30px;
+    background: url("../images/codebg.jpg");
+    float: left;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+.change{
+    width: 60px;
+    height: 30px; 
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+}
+.change:hover{
+    color: red;
+}

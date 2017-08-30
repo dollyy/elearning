@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+/*导航栏*/
+nav{
+    width: 100%;
+    height: 60px;
+    background: #000;
+    line-height: 60px;
+}
+/*logo*/
+nav>img{
+    width: 150px;
+    height: 60px;
+    margin-left: 40px;
+}
+#usermsg{
+    float: right;
+}
+/*用户头像*/
+#usericon{
+    vertical-align: middle;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    cursor: pointer;
+}
+
+/*二级分类*/
+/*二级分类导航*/
+.content{
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+.resnav{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.resst,.resnd,.level{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px;
+}
+.level{
+    border: none;
+}
+.resst div,.resnd div,.level div{
+    width: 91%;
+    height: auto;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.resst>span:nth-child(1),.resnd>span:nth-child(1),.level>span:nth-child(1){
+    font-weight: 600;
+    vertical-align: top;
+    cursor: auto;
+}
+.resst span,.resnd span,.level span{
+    display: inline-block;
+    margin-left: 50px;
+    margin: 20px;
+    cursor: pointer;
+    padding: 7px 12px;
+    border-radius: 5px;
+}
+.cli{
+    color: #fff;
+    background: #2b333b;
+}
+/*二级分类内容*/
+.rescon{
+    width: 100%;
+    height: auto;
+    background: #f3f5f7;
+    padding: 30px 0;
+}
+.rescon>div{
+    width: 85%;
+    height: auto;
+    margin: 5px auto;
+    overflow: hidden;/*使用float会让rescon里面的div脱离文档流，加上这个属性就好了*/
+}
+.rescon>div>div{
+    width: 20%;
+    height: 240px;
+    float: left;
+    margin-bottom: 10px;
+    position: relative;
+}
+.rescon>div>div a{
+    width: 90%;
+    height: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 1px 2px 12px #999;
+    transition: all 0.3s linear;    /*get*/y
+}
+.rescon>div>div a:hover{
+    box-shadow: 4px 6px 12px #999;
+    transition: all 0.3s linear;
+}
+.rescon_top{
+    width: 100%;
+    height: 20%;
+    border-radius: 5px 5px 0 0;
+    background: lightblue;
+}
+.rescon_top>div{
+    width: 85%;
+    height: 44px;
+    line-height: 44px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 15px;
+}
+.icon-aixin{
+    position: absolute;
+    right: 20px;
+    z-index: 12;
+    font-size: 25px;
+}
+.list{
+    color: #eb4f38;
+}
+.rescon_bot{
+    width: 100%;
+    height: 80%;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+    position: relative;
+}
+.rescon_bot>div{
+    width: 85%;
+    margin: 0 auto;
+}
+.rescon_bot>div:nth-child(1){
+    line-height: 50px;
+    font-size: 15px;
+}
+.rescon_bot>div:nth-child(2){
+    color: #666;
+    font-size: 14px;
+    line-height: 28px;
+    max-height: 90px;
+    overflow: hidden;
+}
+.rescon_bot>div:nth-child(3){
+    color: #666;
+    font-size: 14px;
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    
+}
+
+/*分页*/
+.pages{
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    color: #666;
+    line-height: 30px;
+}
+.pages>span,.page{
+    cursor: pointer;
+    margin: 0 5px;
+    display: inline-block;
+    height: 30px;
+}
+.page{
+    width: 30px;
+}
+.pagehover{
+    width: 30px;
+    height: 30px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    transition: background 0.2s ease-in;
+}
+.pages>span:nth-child(1),.pages>span:nth-child(2){
+    color: #ccc;
+    width: auto;
+    cursor: auto;
+}
+.pagescir{
+    background: #333;
+    border-radius: 50%;
+    line-height: 30px;
+    color: #fff;
+}
+
+/*版权信息*/
+footer{
+    width: 100%;
+    height: 80px;
+    background: black;
+    margin-top: 70px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+    font-size: 14px;
+}

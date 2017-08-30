@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/login+register.css">
+</head>
+<body>
+    <!--导航-->
+    <nav>
+        <img src="images/logo.png">
+        <span id="usermsg">
+            <span class="clicks">
+                <span id="login">登陆</span>
+                <span id="register">注册</span>
+            </span>
+            <a href="person.html"><img id="usericon"></a>
+        </span>
+    </nav>
+
+	<div class="bg"></div>
+	
+	<!--登陆-->
+	<div class="login">
+	    <span class="goreg">去注册>></span>
+	    <span class="iconfont icon-cha"></span>
+	    <div class="username">
+			<div class="iconfont icon-yonghuming"></div>
+			<input id="l_name" type="text" placeholder="邮箱" value="yangchen302@163.com">
+		</div>
+		<span class="namewarn" id="u1"></span>
+		<div class="password">
+			<div class="iconfont icon-mima"></div>
+			<input id="l_pwd" type="password" placeholder="密码6-16位数字字母，区分大小写" value="123456yy">
+		</div>
+		<span class="pwdwarn" id="p1"></span>
+		<div class="message">
+			<div class="remember">
+				<input type="checkbox" id="autolog"> 自动登录
+			</div>
+			<div class="forget">
+				<a href="">忘记密码</a>
+			</div>
+		</div>
+		<div class="l_button">
+		    <input type="button" value="登  录">
+		</div>
+	</div>
+
+	<!--注册-->
+	<div class="register">
+	    <span class="golog">去登录>></span>
+	    <span class="iconfont icon-cha"></span>
+		<div class="username">
+			<div class="iconfont icon-yonghuming"></div>
+			<input id="r_name" type="text" placeholder="邮箱" value="yangchen302@163.com">
+		</div>
+		<span class="namewarn" id="u2"></span>
+		<div class="password">
+			<div class="iconfont icon-mima"></div>
+			<input id="r_pwd" type="text" placeholder="密码6-16位数字字母，区分大小写" value="123456yy">
+		</div>
+		<span class="pwdwarn" id="p2"></span>
+		<div class="r_pwdt">
+			<div class="iconfont icon-querenmima"></div>
+			<input id="r_pwdt" type="text" placeholder="再次输入密码" value="123456yy">
+		</div>
+		<span class="pwdwarn" id="p3"></span>
+		<div class="hobby">
+			<span class="iconfont icon-moban14xingquaihao"></span>
+			<div class="hs">
+                <input class="hobb" type="checkbox" value="前端" checked>前端
+                <input class="hobb" type="checkbox" value="后台">后台
+                <input class="hobb" type="checkbox" value="云计算">云计算
+                <input class="hobb" type="checkbox" value="大数据">大数据
+                <input class="hobb" type="checkbox" value="大数据">大数据
+                <input class="hobb" type="checkbox" value="大数据">大数据
+                <input class="hobb" type="checkbox" value="大数据">大数据
+			</div>
+		</div>
+		<span class="hobbywarn" id="h1"></span>
+		<div class="code">
+            <input id="r_code" type="text" placeholder="请输入验证码">
+            <div id="codeMsg"></div>
+            <div class="change">换一换</div>
+		</div>
+		<span class="codewarn" id="c1"></span>
+		<div class="r_button">
+		    <input type="button" value="注册">
+		</div>
+	</div>
+   
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/login+register.js"></script>
+</body>
+</html>
